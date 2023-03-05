@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9BC6DA"
+    tools:context=".activity_longitud">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longitud"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp">
+
+        <EditText
+            android:id="@+id/txt_conve"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="number|numberDecimal"
+            android:hint="Metros a convertir"
+            android:textSize="18sp"
+            android:maxWidth="200dp"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp">
+
+            <Button
+                android:id="@+id/btn_centimetros"
+                android:layout_width="300dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/teal_200"
+                android:textColor="@color/white"
+                android:text="Centimetros"/>
+
+            <Button
+                android:id="@+id/btn_kilometros"
+                android:layout_width="300dp"
+                android:layout_height="80dp"
+                android:backgroundTint="@color/teal_200"
+                android:text="Kilometros"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_espacio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="32dp"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_volver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:text="←"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:textSize="50sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
